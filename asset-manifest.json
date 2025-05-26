@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/LifeInDays2-StillCountingPWA/static/css/main.dcbd73a1.css",
-    "main.js": "/LifeInDays2-StillCountingPWA/static/js/main.f1a9f6c8.js",
+    "main.css": "/LifeInDays2-StillCountingPWA/static/css/main.b60c2ff5.css",
+    "main.js": "/LifeInDays2-StillCountingPWA/static/js/main.fcddad0a.js",
     "static/js/453.fc443852.chunk.js": "/LifeInDays2-StillCountingPWA/static/js/453.fc443852.chunk.js",
     "index.html": "/LifeInDays2-StillCountingPWA/index.html",
-    "main.dcbd73a1.css.map": "/LifeInDays2-StillCountingPWA/static/css/main.dcbd73a1.css.map",
-    "main.f1a9f6c8.js.map": "/LifeInDays2-StillCountingPWA/static/js/main.f1a9f6c8.js.map",
+    "main.b60c2ff5.css.map": "/LifeInDays2-StillCountingPWA/static/css/main.b60c2ff5.css.map",
+    "main.fcddad0a.js.map": "/LifeInDays2-StillCountingPWA/static/js/main.fcddad0a.js.map",
     "453.fc443852.chunk.js.map": "/LifeInDays2-StillCountingPWA/static/js/453.fc443852.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcbd73a1.css",
-    "static/js/main.f1a9f6c8.js"
+    "static/css/main.b60c2ff5.css",
+    "static/js/main.fcddad0a.js"
   ]
 }
