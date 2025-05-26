@@ -1,14 +1,23 @@
 import { useState, useEffect, useRef } from "react";
 
 export default function LifeInDaysApp() {
-  const [birthDate, setBirthDate] = useState("1990-01-01");
-  const [lifespan, setLifespan] = useState(90);
+  const [birthDate, setBirthDate] = useState(() => {
+    return localStorage.getItem("birthDate") || "1990-01-01";
+  });
+
+  const [lifespan, setLifespan] = useState(() => {
+    return parseInt(localStorage.getItem("lifespan")) || 90;
+  });
+
   const [daysLived, setDaysLived] = useState(0);
   const [daysRemaining, setDaysRemaining] = useState(0);
   const [preciseAge, setPreciseAge] = useState(0);
   const animationRef = useRef(null);
 
   useEffect(() => {
+    localStorage.setItem("birthDate", birthDate);
+    localStorage.setItem("lifespan", lifespan);
+
     const now = new Date();
     const birth = new Date(birthDate);
     const daysPassed = Math.floor((now - birth) / (1000 * 60 * 60 * 24));
@@ -74,8 +83,9 @@ export default function LifeInDaysApp() {
       <p className="text-sm text-gray-500 text-center italic">
         "Still counting... because you're still here."
       </p>
+
       <footer className="text-center text-xs text-gray-400 pt-4">
-        &copy; <a href="https://skyrien.com" className="underline hover:text-purple-600">skyrien.com</a> 2025
+        &copy; 2025 <a href="https://skyrien.com" className="underline hover:text-purple-600">skyrien.com</a>
       </footer>
     </div>
   );
