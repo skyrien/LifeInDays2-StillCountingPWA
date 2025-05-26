@@ -74,6 +74,9 @@ export default function LifeInDaysApp() {
       <p className="text-sm text-gray-500 text-center italic">
         "Still counting... because you're still here."
       </p>
+      <footer className="text-center text-xs text-gray-400 pt-4">
+        &copy; <a href="https://skyrien.com" className="underline hover:text-purple-600">skyrien.com</a> 2025
+      </footer>
     </div>
   );
 }
