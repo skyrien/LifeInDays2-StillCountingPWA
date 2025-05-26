@@ -85,7 +85,7 @@ export default function LifeInDaysApp() {
       </p>
 
       <footer className="text-center text-xs text-gray-400 pt-4">
-        &copy; 2025 <a href="https://skyrien.com" className="underline hover:text-purple-600">skyrien.com</a>
+        LifeInDays v2.0 &copy; 2025 <a href="https://skyrien.com" className="underline hover:text-purple-600">skyrien.com</a>
       </footer>
     </div>
   );
