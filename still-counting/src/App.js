@@ -33,7 +33,7 @@ export default function LifeInDaysApp() {
   return (
     <div className="p-6 max-w-xl mx-auto bg-white rounded-xl shadow-md space-y-6">
       <img
-        src="/banner-life-in-days-still-counting.png"
+        src={`${process.env.PUBLIC_URL}/banner-life-in-days-still-counting.png`}
         alt="Life in Days: Still Counting Banner"
         className="w-full rounded-lg"
       />
