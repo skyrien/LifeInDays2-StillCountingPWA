@@ -12,6 +12,7 @@ export default function LifeInDaysApp() {
   const [daysLived, setDaysLived] = useState(0);
   const [daysRemaining, setDaysRemaining] = useState(0);
   const [preciseAge, setPreciseAge] = useState(0);
+  const [showAbout, setShowAbout] = useState(false);
   const animationRef = useRef(null);
 
   useEffect(() => {
@@ -40,7 +41,7 @@ export default function LifeInDaysApp() {
   }, [birthDate]);
 
   return (
-    <div className="p-6 max-w-xl mx-auto bg-white rounded-xl shadow-md space-y-6">
+    <div className="p-6 max-w-xl mx-auto bg-white rounded-xl shadow-md space-y-6 relative">
       <img
         src={`${process.env.PUBLIC_URL}/banner-life-in-days-still-counting.png`}
         alt="Life in Days: Still Counting Banner"
@@ -85,8 +86,34 @@ export default function LifeInDaysApp() {
       </p>
 
       <footer className="text-center text-xs text-gray-400 pt-4">
-        LifeInDays v2.0 &copy; 2025 <a href="https://skyrien.com" className="underline hover:text-purple-600">skyrien.com</a>
+        LifeInDays v2.0 &copy; 2025 <a href="https://skyrien.com" className="underline hover:text-purple-600">skyrien.com</a> |
+        <button onClick={() => setShowAbout(true)} className="text-purple-600 underline ml-2">About</button>
       </footer>
+
+      {showAbout && (
+        <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50">
+          <div className="bg-white rounded-lg max-w-lg w-full p-6 relative shadow-lg">
+            <button onClick={() => setShowAbout(false)} className="absolute top-2 right-2 text-gray-400 hover:text-gray-700">&times;</button>
+            <img
+              src={`${process.env.PUBLIC_URL}/banner-life-in-days-still-counting.png`}
+              alt="About Banner"
+              className="w-full rounded mb-4"
+            />
+            <h2 className="text-xl font-bold text-purple-700 mb-2">About This App</h2>
+            <p className="text-sm text-gray-700 mb-2">
+              <strong>Life in Days: Still Counting</strong> is a gentle time tracker and reflection companion that counts the days you’ve lived—and those you have left. It's designed to bring awareness, intentionality, and mindfulness into your daily presence.
+            </p>
+            <p className="text-sm text-gray-700 mb-4">
+              This project began in 2015 and was reimagined in 2025 with a renewed focus on simplicity and purpose. Data is stored locally, and no personal information is ever shared.
+            </p>
+            <h3 className="text-sm font-semibold text-gray-600">Version History</h3>
+            <ul className="text-xs text-gray-500 list-disc pl-5">
+              <li><strong>v2.0</strong> – PWA support, local storage, precise age counter, new banner & UI (2025)</li>
+              <li><strong>v1.0</strong> – Original Android app (2015)</li>
+            </ul>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
