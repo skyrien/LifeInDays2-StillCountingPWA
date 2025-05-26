@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/LifeInDays2-StillCountingPWA/static/css/main.fbec3828.css",
+    "main.js": "/LifeInDays2-StillCountingPWA/static/js/main.656f3510.js",
+    "static/js/453.fc443852.chunk.js": "/LifeInDays2-StillCountingPWA/static/js/453.fc443852.chunk.js",
+    "index.html": "/LifeInDays2-StillCountingPWA/index.html",
+    "main.fbec3828.css.map": "/LifeInDays2-StillCountingPWA/static/css/main.fbec3828.css.map",
+    "main.656f3510.js.map": "/LifeInDays2-StillCountingPWA/static/js/main.656f3510.js.map",
+    "453.fc443852.chunk.js.map": "/LifeInDays2-StillCountingPWA/static/js/453.fc443852.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbec3828.css",
+    "static/js/main.656f3510.js"
+  ]
+}
